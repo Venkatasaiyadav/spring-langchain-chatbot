@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/ragdb}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:postgres}
+
+app:
+  pgvector:
+    host: ${PGVECTOR_HOST:localhost}
+    port: ${PGVECTOR_PORT:5432}
+    database: ${PGVECTOR_DATABASE:ragdb}
+    user: ${PGVECTOR_USER:postgres}
+    password: ${PGVECTOR_PASSWORD:postgres}
+    table: ${PGVECTOR_TABLE:document_embeddings}
+
+openai:
+  api-key: ${OPENAI_API_KEY}
+  base-url: ${OPENAI_BASE_URL:https://openrouter.ai/api/v1}
+  chat-model: ${OPENAI_CHAT_MODEL:openai/gpt-4o-mini}
+  embedding-model: ${OPENAI_EMBEDDING_MODEL:text-embedding-3-small}
