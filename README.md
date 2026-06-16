@@ -3,6 +3,13 @@
 A support chatbot built with Spring Boot, LangChain4j, OpenRouter, and PGVector.  
 It loads a company PDF, splits it into chunks, stores embeddings in PostgreSQL with pgvector, and answers user questions using Retrieval-Augmented Generation (RAG).
 
+
+## Branch Notice
+
+The complete project source code is currently available in the `master` branch.
+
+The `main` branch does not contain the full project code right now, so please switch to the `master` branch to view or clone the working project
+
 ## Features.
 
 - Spring Boot REST API
